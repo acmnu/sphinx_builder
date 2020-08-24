@@ -101,7 +101,7 @@ master_doc = "index"
 # General information about the project.
 
 
-project = u"Arenadata Backup"
+project = u"Arenadata"
 copyright = u"{}, Arenadata.io".format(now.year)
 author = u"Arenadata.io"
 

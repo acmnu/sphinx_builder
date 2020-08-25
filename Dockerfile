@@ -3,6 +3,7 @@ FROM python:3-alpine
 COPY requirements.txt /
 RUN pip install -r /requirements.txt
 
-COPY common /common
+COPY tmpl /tmpl
+COPY script /script
 
-CMD ["sphinx-autobuild", "/spec/", "/html/", "-p", "9000", "-H", "0.0.0.0", "-c", "/common"]
+CMD ["sphinx-autobuild", "/spec/", "/tmp/", "-p", "9000", "-H", "0.0.0.0"]

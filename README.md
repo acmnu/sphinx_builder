@@ -4,6 +4,16 @@ That is images which is usefull to develop documentation online.
 
 ## Usage
 
+### Create empty template
+
+To create an empty template you could use the following command:
+
+```
+docker run -it --rm -v $(pwd):/spec -u $(id -u ${USER}):$(id -g ${USER})  ci.arenadata.io/sphinx-autobuild /script/create_tmpl.sh
+```
+
+### Run autobuild develop server
+
 Run docker container against your documentation:
 
 ```
